@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>New Releases</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="releases.js"></script>
+    
+
+    <style type="text/css">
+      .navbar {
+        font-family: 'Nunito',sans-serif;
+        margin-bottom: 0;
+        background-color: #0b98de;
+        border: 0;
+        font-size: 20px !important;
+        border-radius: 0;
+      }
+      
+      .navbar li a, .navbar .navbar-brand { 
+        color: #d5d5d5 !important;
+      }
+
+      .navbar-nav li a:hover {
+        color: #fff !important;
+      }
+      
+      .navbar-nav li.active a {
+        color: #fff !important;
+        background-color: #8b8bed !important;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <div style="font-family: 'Montserrat', sans-serif; font-size: 30px; letter-spacing: -2px; color: white;">Movie List</div>
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="releases.html"><div class="current">New Releases</div></a></li>
+          <li><a href="movie_category.html">Category</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Displaying the movies -->
+    <div id="movie-display" style="background-color: #EEEEEE">
+      <div class="container">
+        <div class="row">
+          <div class="genreLabel">
+            <h1 id="movieGenreLabel" class="hdr1 retroshadow"></h1></div>
+          <div id="movie-grid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Category</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="category.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="category_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet"> 
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+  
+    <style type="text/css">
+      .navbar {
+        font-family: 'Nunito',sans-serif;
+        margin-bottom: 0;
+        background-color: #0b98de;
+        border: 0;
+        font-size: 20px !important;
+        border-radius: 0;
+      }
+
+      .navbar li a, .navbar .navbar-brand { 
+        color: #d5d5d5 !important;
+      }
+
+      .navbar-nav li a:hover {
+        color: #fff !important;
+      }
+
+      .navbar-nav li.active a {
+        color: #fff
+      }
+     
+      .navbar-default .navbar-toggle {
+        border-color: transparent;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <div style="font-family: 'Montserrat', sans-serif; font-size: 30px; letter-spacing: -2px; color: white;">Movie List</div>
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="releases.html">New Releases</a></li>
+          <li><a href="movie_category.html"><div class="current">Category</div></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="action">Action</button>
+              </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="adventure">Adventure</button>
+              </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="animation">Animation</button>
+              </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="comedy">Comedy</button>
+              </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="drama">Drama</button>
+              </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="family">Family</button>
+              </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="fantasy">Fantasy</button>
+              </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="horror">Horror</button>
+              </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="music">Music</button>
+              </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="romance">Romance</button>
+              </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="scifi">Science Fiction</button>
+              </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="genre-btn" align="middle">
+                <button type="submit" id="thriller">Thriller</button>
+              </div>
+        </div>
+      </div>
+      
+    </div>
+    <br><br>
+    </div>
+
+    <div id="genre-display" style="background-color: #EEEEEE">
+      <div class="container">
+        <div class="row">
+          <div class="genreLabel">
+            <h1 id="movieGenreLabel" class="hdr1 retroshadow"></h1></div>
+          <!-- We need the h1 to change accordingly depending on what was clicked. -->
+          <div id="genre-grid">    
+            <!-- Jquery get us the movie posters! Need a place to put the poster images -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
